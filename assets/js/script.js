@@ -6,13 +6,6 @@ const renderAboutMeContent = () => {
           <div class="row my-4">
             <h1 class="display-1">About Me</h1>
           </div>
-          <div class="row">
-            <img
-              class="about-image mx-auto"
-              src="./assets/images/my-face.png"
-              alt="Picture of my face."
-            />
-          </div>
           <div class="row my-4">
             <div class="col-sm">
               <p class="font-monospace fs-5">
