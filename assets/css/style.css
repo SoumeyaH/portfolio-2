@@ -22,3 +22,13 @@
   border-radius: 60%;
   width: 8rem;
 }
+
+.tech-logo-image {
+  border-radius: 100%;
+  /* height: 2rem; */
+  width: 6rem;
+}
+
+.check {
+  border: 1px solid black;
+}
