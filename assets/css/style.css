@@ -19,7 +19,7 @@
   margin: 1rem;
 }
 
-/* About Me Page */
+/* About Me Page to do remove?*/
 .about-image {
   border-radius: 60%;
   width: 8rem;
@@ -37,4 +37,18 @@
 
 .tech-icon-container:hover {
   opacity: 1;
+}
+
+/* Portfolio Section to do screenshot sizing */
+.portfolio-image-container {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.control-image-size {
+  border: 1px solid red;
+}
+
+.portfolio-img {
+  height: 9rem;
 }

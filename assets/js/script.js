@@ -1,3 +1,66 @@
+// const renderContactMeContent = () => {
+//   $("#main-container").empty();
+
+//   const landingPageContent;
+
+//   $("#main-container").append();
+// };
+
+const renderPortfolioContent = () => {
+  $("#main-container").empty();
+
+  const portfolioContent = `
+  <div class="row my-4 text-center">
+  <h1 class="display-1">Portfolio</h1>
+</div>
+<div class="shadow-lg rounded mx-auto" style="max-width: 90vw">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4 portfolio-image-container">
+        <div class="control-image-size">
+          <img
+            src="./assets/images/portfolio/event-jam.png"
+            alt="Event Jam landing page."
+            class="portfolio-img"
+          />
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title text-center">Event Jam</h4>
+          <p class="card-text">
+            Event Jam is a dynamic online application that offer users
+            the ability to search for events in any city in the UK and
+            get relevant, reliable and up to date Covid-19 information
+            for that area.
+          </p>
+          <div class="text-center">
+            <a
+              href="https://iwanagahime.github.io/event-jam/"
+              target="_blank"
+            >
+              <button type="button" class="btn btn-light mx-3 my-1">
+                Deployed
+              </button>
+            </a>
+            <a
+              href="https://github.com/iwanagahime/event-jam"
+              target="_blank"
+            >
+              <button type="button" class="btn btn-light mx-3 my-1">
+                Github
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+  $("#main-container").append(portfolioContent);
+};
+
 const renderAboutMeContent = () => {
   $("#main-container").empty();
 
@@ -88,7 +151,7 @@ const renderAboutMeContent = () => {
 const renderLandingPage = () => {
   $("#main-container").empty();
 
-  const renderLandingPageContent = `
+  const landingPageContent = `
       <div
       class="text-center position-absolute top-50 start-50 translate-middle"
       id="start-content"
@@ -116,10 +179,13 @@ const renderLandingPage = () => {
       </div>
     </div>`;
 
-  $("#main-container").append(renderLandingPageContent);
+  $("#main-container").append(landingPageContent);
 };
 
 $("#home-link").click(renderLandingPage);
 $("#about-me-link").click(renderAboutMeContent);
+$("#portfolio-link").click(renderPortfolioContent);
+// $("#contact-me-link").click(renderContactMeContent);
+// $("#resume-link").click(renderPortfolioContent);
 
 $(document).ready(renderLandingPage);
