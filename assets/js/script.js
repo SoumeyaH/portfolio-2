@@ -23,7 +23,7 @@ const renderContactMeContent = () => {
       <div class="col-md my-2">
         <div class="form-floating">
           <input
-            type="email"
+            type="text"
             class="form-control"
             id="floatingInputGrid"
             placeholder="Surname"
@@ -40,6 +40,15 @@ const renderContactMeContent = () => {
         placeholder="name@example.com"
       />
       <label for="floatingInputGrid">Email address</label>
+    </div>
+    <div class="form-floating mt-4">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInputGrid"
+        placeholder="subject"
+      />
+      <label for="floatingInputGrid">Subject</label>
     </div>
     <div class="form-floating mt-4">
       <textarea
