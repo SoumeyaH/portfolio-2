@@ -32,10 +32,6 @@ a:hover {
 }
 
 /* About Me Page to do remove?*/
-.about-image {
-  border-radius: 60%;
-  width: 8rem;
-}
 
 .tech-logo-image {
   border-radius: 100%;
@@ -43,13 +39,17 @@ a:hover {
   margin: 1rem;
 }
 
-.tech-icon-container {
+.tech-icons-container {
   border: 1px solid black;
 }
-
-.tech-icon-container:hover {
-  opacity: 1;
+.tech-icon-container {
+  border: 1px solid black;
+  max-width: 15rem;
 }
+
+/* .tech-icon-container:hover {
+  opacity: 1;
+} */
 
 /* Portfolio Section to do screenshot sizing */
 .portfolio-image-container {

@@ -175,7 +175,7 @@ const renderAboutMeContent = () => {
             <div class="row my-4">
               <h2>Languages and Frameworks</h2>
             </div>
-            <div class="row">
+            <div class="row tech-icons-container">
               <div class="col-sm tech-icon-container">
                 <img
                   src="./assets/images/technologies/html5.png"
@@ -254,14 +254,17 @@ const renderLandingPage = () => {
       <h1 class="display-1">Soumeya Hassan</h1>
       <h3 class="text-muted">Welcome to My Portfolio</h3>
       <div>
-        <a href="https://github.com/SoumeyaH" target="_blank">
+        <span>
+          <a href="https://github.com/SoumeyaH" target="_blank">
           <img
             class="logo-image"
             src="./assets/images/social/github-icon.png"
             alt="github icon."
           />
-        </a>
-        <a
+          </a>
+        </span>
+        <span>
+          <a
           href="https://www.linkedin.com/in/soumeya-hassan"
           target="_blank"
         >
@@ -271,6 +274,7 @@ const renderLandingPage = () => {
             alt="linkedin icon."
           />
         </a>
+        </span>
       </div>
     </div>`;
 
