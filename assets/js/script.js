@@ -2,10 +2,11 @@ const renderContactMeContent = () => {
   $("#main-container").empty();
 
   const contactMeContent = `
+  <div class="mx-auto">
   <div class="row my-4 text-center">
   <h1 class="display-1">Contact Me</h1>
 </div>
-<div class="row mx-auto">
+<div class="row">
   <form class="col-sm">
     <div class="row">
       <div class="col-md my-2">
@@ -94,7 +95,8 @@ const renderContactMeContent = () => {
       </div>
     </div>
   </aside>
-</div>`;
+</div>
+  </div>`;
 
   $("#main-container").append(contactMeContent);
 };

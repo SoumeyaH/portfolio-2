@@ -1,3 +1,15 @@
+header {
+  position: sticky;
+}
+
+li {
+  max-width: fit-content;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 .hero {
   background-image: linear-gradient(
       to bottom,
