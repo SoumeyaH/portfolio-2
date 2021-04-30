@@ -39,12 +39,13 @@ a:hover {
   margin: 1rem;
 }
 
-.tech-icons-container {
-  border: 1px solid black;
-}
+/* .tech-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+} */
 .tech-icon-container {
-  border: 1px solid black;
-  max-width: 15rem;
+  max-width: fit-content;
+  margin: auto;
 }
 
 /* .tech-icon-container:hover {
