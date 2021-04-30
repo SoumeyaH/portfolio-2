@@ -1,10 +1,94 @@
-// const renderContactMeContent = () => {
-//   $("#main-container").empty();
+const renderContactMeContent = () => {
+  $("#main-container").empty();
 
-//   const landingPageContent;
+  const contactMeContent = `
+  <div class="row my-4 text-center">
+  <h1 class="display-1">Contact Me</h1>
+</div>
+<div class="row mx-auto">
+  <form class="col-sm">
+    <div class="row">
+      <div class="col-md my-2">
+        <div class="form-floating">
+          <input
+            type="text"
+            aria-label="First name"
+            class="form-control"
+            id="floatingInputGrid"
+            placeholder="First Name"
+          />
+          <label for="floatingInputGrid">First Name</label>
+        </div>
+      </div>
+      <div class="col-md my-2">
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInputGrid"
+            placeholder="Surname"
+          />
+          <label for="floatingInputGrid">Surname</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-floating my-2">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingInputGrid"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInputGrid">Email address</label>
+    </div>
+    <div class="form-floating mt-4">
+      <textarea
+        class="form-control"
+        placeholder="Leave a comment here"
+        id="floatingTextarea2"
+        style="height: 100px"
+      ></textarea>
+      <label for="floatingTextarea2">Message</label>
+    </div>
+    <div class="text-center mx-auto my-3">
+      <button type="button" class="btn btn-primary" disabled>
+        Submit
+      </button>
+    </div>
+  </form>
+  <aside class="col-sm py-2">
+    <p><strong>Email:</strong> soumeyahassan47@gmail.com</p>
+    <p><strong>Phone:</strong> +447419213578</p>
+    <div>
+      <div>
+        <span><strong>GitHub:</strong></span>
+        <a href="https://github.com/SoumeyaH" target="_blank">
+          <img
+            class="logo-image"
+            src="./assets/images/social/github-icon.png"
+            alt="github icon."
+          />
+        </a>
+      </div>
+      <div>
+        <span><strong>LinkedIn:</strong></span>
+        <a
+          href="https://www.linkedin.com/in/soumeya-hassan"
+          target="_blank"
+        >
+          <img
+            class="logo-image"
+            src="./assets/images/social/linkedin-icon.png"
+            alt="linkedin icon."
+          />
+        </a>
+      </div>
+    </div>
+  </aside>
+</div>`;
 
-//   $("#main-container").append();
-// };
+  $("#main-container").append(contactMeContent);
+};
 
 const renderPortfolioContent = () => {
   $("#main-container").empty();
@@ -185,7 +269,7 @@ const renderLandingPage = () => {
 $("#home-link").click(renderLandingPage);
 $("#about-me-link").click(renderAboutMeContent);
 $("#portfolio-link").click(renderPortfolioContent);
-// $("#contact-me-link").click(renderContactMeContent);
+$("#contact-me-link").click(renderContactMeContent);
 // $("#resume-link").click(renderPortfolioContent);
 
 $(document).ready(renderLandingPage);
