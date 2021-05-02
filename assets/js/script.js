@@ -1,3 +1,8 @@
+const openResume = () => {
+  console.log("hello");
+  window.location.href = "https://soumeyah.github.io/portfolio-2/";
+};
+
 const renderContactMeContent = () => {
   $("#main-container").empty();
 
@@ -283,11 +288,6 @@ $("#home-link").click(renderLandingPage);
 $("#about-me-link").click(renderAboutMeContent);
 $("#portfolio-link").click(renderPortfolioContent);
 $("#contact-me-link").click(renderContactMeContent);
-
-const goToURL = () => {
-  console.log("hello");
-};
-
-// $("#resume-link").click(renderPortfolioContent);
+$("#resume-link").click(openResume);
 
 $(document).ready(renderLandingPage);
