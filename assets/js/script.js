@@ -1,8 +1,8 @@
 const openResume = () => {
-  console.log("hello");
-  window.location.href =
-    "https://soumeyah.github.io/portfolio-2/SoumeyaHassanResume.pdf";
-  // "https://tgsoverly.github.io/resume/cv.pdf"
+  window.open(
+    "https://soumeyah.github.io/portfolio-2/SoumeyaHassanResume.pdf",
+    "_blank"
+  );
 };
 
 const renderContactMeContent = () => {
