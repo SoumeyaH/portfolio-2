@@ -366,4 +366,28 @@ $("#portfolio-link").click(renderPortfolioContent);
 $("#contact-me-link").click(renderContactMeContent);
 $("#resume-link").click(openResume);
 
+const navbarClicked = (event) => {
+  const home = $("#home-link");
+  console.log("home", home);
+  console.log("target", event.target);
+
+  switch (something) {
+    case "something":
+      console.log("hello");
+      break;
+
+    case "somethingelse":
+      console.log("hello again");
+      break;
+  }
+
+  const target = $(event.target);
+  console.log("target", target);
+
+  if (target.is("li")) {
+  }
+};
+
+$("#navbar-items").click(navbarClicked);
+
 $(document).ready(renderLandingPage);
