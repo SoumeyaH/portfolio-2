@@ -113,53 +113,7 @@ const renderPortfolioContent = () => {
   $("#main-container").empty();
 
   const portfolioContent = `
-  <div class="row my-4 text-center">
-  <h1 class="display-1">Portfolio</h1>
-</div>
-<div class="rounded mx-auto shadow-lg" style="max-width: 80vw">
-  <div class="card mb-3 text-white bg-dark">
-    <div class="row g-0">
-      <div class="col-md-4 portfolio-image-container">
-        <div class="control-image-size">
-          <img
-            src="./assets/images/portfolio/event-jam.png"
-            alt="Event Jam landing page."
-            class="portfolio-img"
-          />
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h4 class="card-title text-center"><u>Event Jam</u></h4>
-          <p class="card-text">
-            Event Jam is a dynamic online application that offer users the
-            ability to search for events in any city in the UK and get
-            relevant, reliable and up to date Covid-19 information for
-            that area.
-          </p>
-          <div class="text-center">
-            <a
-              href="https://iwanagahime.github.io/event-jam/"
-              target="_blank"
-            >
-              <button type="button" class="btn btn-light mx-3 my-1">
-                Deployed
-              </button>
-            </a>
-            <a
-              href="https://github.com/iwanagahime/event-jam"
-              target="_blank"
-            >
-              <button type="button" class="btn btn-light mx-3 my-1">
-                Github
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`;
+  `;
 
   $("#main-container").append(portfolioContent);
 };

@@ -58,16 +58,16 @@ a:hover {
 } */
 
 /* Portfolio Section to do screenshot sizing */
-
-.portfolio-image-container {
-  border: 1px solid black;
-  text-align: center;
+.portfolio-card {
+  max-width: 75%;
+  background-color: #c9adcf9d;
 }
 
-.control-image-size {
-  border: 1px solid red;
+.card-header {
+  background-color: #c9adcf;
 }
 
 .portfolio-img {
-  height: 9rem;
+  /* height: 9rem; */
+  max-width: 40%;
 }
