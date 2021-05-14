@@ -23,6 +23,10 @@ a:hover {
   height: 100vh;
 }
 
+.background-colour {
+  background-color: #caa8b955;
+}
+
 /* landing Page */
 .logo-image {
   border-radius: 100%;

@@ -1,3 +1,8 @@
+const removeBackgroundImg = () => {
+  const body = $("#body").removeClass("hero").addClass("background-colour");
+  return body;
+};
+
 const openResume = () => {
   window.open(
     "https://soumeyah.github.io/portfolio-2/SoumeyaHassanResume.pdf",
@@ -6,6 +11,7 @@ const openResume = () => {
 };
 
 const renderContactMeContent = () => {
+  removeBackgroundImg();
   $("#main-container").empty();
 
   const contactMeContent = `
@@ -110,6 +116,7 @@ const renderContactMeContent = () => {
 };
 
 const renderPortfolioContent = () => {
+  removeBackgroundImg();
   $("#main-container").empty();
 
   const portfolioContent = `
@@ -239,6 +246,7 @@ const renderPortfolioContent = () => {
 };
 
 const renderAboutMeContent = () => {
+  removeBackgroundImg();
   $("#main-container").empty();
 
   const aboutMeContent = `
@@ -323,6 +331,7 @@ const renderAboutMeContent = () => {
 };
 
 const renderLandingPage = () => {
+  $("#body").removeClass("background-colour").addClass("hero");
   $("#main-container").empty();
 
   const landingPageContent = `
