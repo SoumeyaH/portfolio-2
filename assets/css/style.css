@@ -5,7 +5,9 @@ header {
 li {
   max-width: fit-content;
 }
-
+a {
+  text-decoration: none;
+}
 a:hover {
   cursor: pointer;
 }
