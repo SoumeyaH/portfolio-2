@@ -81,7 +81,8 @@ const renderContactMeContent = () => {
             </div>
           </form>
           <aside class="m-2">
-            <p><strong>Email:</strong> soumeyahassan47@gmail.com</p>
+            <p><strong>Email:</strong><a href="mailto:soumeyahassan47@gmail.com"> soumeyahassan47@gmail.com</a>
+            </p>
             <p><strong>Phone:</strong> +447419213578</p>
             <div>
               <div>
