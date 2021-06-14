@@ -369,31 +369,27 @@ const renderLandingPage = () => {
   $("#main-container").append(landingPageContent);
 };
 
-$("#home-link").click(renderLandingPage);
-$("#about-me-link").click(renderAboutMeContent);
-$("#portfolio-link").click(renderPortfolioContent);
-$("#contact-me-link").click(renderContactMeContent);
-$("#resume-link").click(openResume);
-
 const navbarClicked = (event) => {
-  const home = $("#home-link");
-  console.log("home", home);
-  console.log("target", event.target);
-
-  switch (something) {
-    case "something":
-      console.log("hello");
+  switch (event.target.id) {
+    case "home-link":
+      renderLandingPage();
       break;
 
-    case "somethingelse":
-      console.log("hello again");
+    case "about-me-link":
+      renderAboutMeContent();
       break;
-  }
 
-  const target = $(event.target);
-  console.log("target", target);
+    case "portfolio-link":
+      renderPortfolioContent();
+      break;
 
-  if (target.is("li")) {
+    case "contact-me-link":
+      renderContactMeContent();
+      break;
+
+    case "resume-link":
+      openResume();
+      break;
   }
 };
 
