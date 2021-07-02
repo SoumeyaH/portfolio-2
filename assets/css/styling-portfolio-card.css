@@ -1,0 +1,15 @@
+.portfolio-card {
+  max-width: 60%;
+  background-color: #c9adcf9d;
+}
+
+.card-header {
+  background-color: #c9adcf;
+}
+
+.portfolio-img {
+  /* max-width: 40%; */
+
+  max-width: 286px;
+  max-height: 429px;
+}
