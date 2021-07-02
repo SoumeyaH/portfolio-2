@@ -109,37 +109,32 @@ const renderPortfolioContent = () => {
   $("#main-container").empty();
 
   const portfolioContent = `
-  <div class="row my-4 text-center">
-        <h1 class="">Portfolio</h1>
-      </div>
-
-      <div class="card text-center my-4 mx-auto shadow-lg portfolio-card">
-        <div class="card-header">Event Jam</div>
-        <div class="card-body">
-          <div class="mb-2 control-image-size">
-            <img
-              src="./assets/images/portfolio/event-jam.png"
-              alt="Event Jam landing page."
-              class="portfolio-img"
-            />
-          </div>
-          <p class="card-text">
-            Event Jam is a dynamic online application that offer users the
-            ability to search for events in any city in the UK and get relevant,
-            reliable and up to date Covid-19 information for that area.
-          </p>
-          <p>
-            <i
-              >HTML/CSS, Bulma, JS (ES6), jQuery, Chart.js, Third-Party APIs,
-              Git</i
-            >
-          </p>
+    <div class="card text-center my-4 mx-auto shadow-lg portfolio-card">
+      <div class="card-header">Tri-Via-Hub</div>
+      <div class="card-body">
+        <video controls muted class="card-img-top project-img">
+          <source src="./assets/videos/tri-via-hub.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="m-2">
+          Event Jam is a fullstack application that offer users the ability to
+          securely sign-up/login, create and play quizzes. Quizzes can be
+          created with the users own questions or generated via the Open Trivia
+          API
+        </p>
+        <p class="m-2 fst-italic text-muted">
+          HTML/CSS, Bootstrap, JS (ES6), jQuery, Third-Party API, Node.js,
+          MySQL, Sequelize, Express, Handlebars, Git
+        </p>
+        <div class="d-flex flex-wrap justify-content-center">
           <div>
             <a href="https://soumeyah.github.io/event-jam/" target="_blank">
               <button type="button" class="btn btn-light mx-3 my-1">
                 Deployed
               </button>
             </a>
+          </div>
+          <div>
             <a href="https://github.com/SoumeyaH/event-jam" target="_blank">
               <button type="button" class="btn btn-light mx-3 my-1">
                 Github
@@ -148,38 +143,33 @@ const renderPortfolioContent = () => {
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="card text-center my-4 mx-auto shadow-lg portfolio-card">
-        <div class="card-header">Weather Dashboard</div>
-        <div class="card-body">
-          <div class="mb-2 control-image-size">
-            <img
-              src="./assets/images/portfolio/weather-dashboard.png"
-              alt="Weather Dashboard landing page."
-              class="portfolio-img"
-            />
-          </div>
-          <p class="card-text">
-            A dynamic website where users can check the weather for a given
-            location and receive weather information for the current day as well
-            as a five day forecast.
-          </p>
-          <p>
-            <i>HTML/CSS, Bootstrap, JS (ES6), jQuery, Third-Party API, Git</i>
-          </p>
+    <div class="card text-center my-4 mx-auto shadow-lg portfolio-card">
+      <div class="card-header">Event Jam</div>
+      <div class="card-body">
+        <video controls muted class="card-img-top project-img">
+          <source src="./assets/videos/event-jam.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="m-2">
+          Event Jam is a dynamic online application that offer users the ability
+          to search for events in any city in the UK and get relevant, reliable
+          and up to date Covid-19 information for that area.
+        </p>
+        <p class="m-2 fst-italic text-muted">
+          HTML/CSS, Bulma, JS (ES6), jQuery, Chart.js, Third-Party APIs, Git
+        </p>
+        <div class="d-flex flex-wrap justify-content-center">
           <div>
-            <a
-              href="https://soumeyah.github.io/weather_dashboard/"
-              target="_blank"
-            >
+            <a href="https://soumeyah.github.io/event-jam/" target="_blank">
               <button type="button" class="btn btn-light mx-3 my-1">
                 Deployed
               </button>
             </a>
-            <a
-              href="https://github.com/SoumeyaH/weather_dashboard"
-              target="_blank"
-            >
+          </div>
+          <div>
+            <a href="https://github.com/SoumeyaH/event-jam" target="_blank">
               <button type="button" class="btn btn-light mx-3 my-1">
                 Github
               </button>
@@ -187,48 +177,7 @@ const renderPortfolioContent = () => {
           </div>
         </div>
       </div>
-
-      <div class="card text-center my-4 mx-auto shadow-lg portfolio-card">
-        <div class="card-header">Daily Work Scheduler</div>
-        <div class="card-body">
-          <div class="mb-2 control-image-size">
-            <img
-              src="./assets/images/portfolio/daily-work-scheduler.png"
-              alt="Daily Work Scheduler landing page."
-              class="portfolio-img"
-            />
-          </div>
-          <p class="card-text">
-            A daily scheduler application that offer users the ability to save
-            items to do during the day, and shows the time blocks as past,
-            present or future.
-          </p>
-          <p>
-            <i
-              >HTML/CSS, FontAwesome, Bootstrap, JS (ES6), jQuery, Moment.js,
-              Git</i
-            >
-          </p>
-          <div>
-            <a
-              href="https://soumeyah.github.io/daily_work_scheduler/"
-              target="_blank"
-            >
-              <button type="button" class="btn btn-light mx-3 my-1">
-                Deployed
-              </button>
-            </a>
-            <a
-              href="https://github.com/SoumeyaH/daily_work_scheduler/"
-              target="_blank"
-            >
-              <button type="button" class="btn btn-light mx-3 my-1">
-                Github
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
+  </div>
   `;
 
   $("#main-container").append(portfolioContent);
