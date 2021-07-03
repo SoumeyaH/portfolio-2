@@ -109,6 +109,9 @@ const renderPortfolioContent = () => {
   $("#main-container").empty();
 
   const portfolioContent = `
+    <div class="row my-4 text-center">
+      <h1 class="display-1">Portfolio</h1>
+    </div>
     <div class="card text-center my-4 mx-auto shadow-lg portfolio-card">
     <div class="card-header">Tri-Via-Hub</div>
     <div class="card-body">
